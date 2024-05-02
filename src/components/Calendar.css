@@ -1,0 +1,113 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-field {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.input-container .input {
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    width: 75px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    width: 245px;
+    border-radius: 20px;
+    margin-top: 10px;
+    user-select: none;
+    padding: 10px;
+}
+
+.light {
+    border: 1px solid #242424;
+    background-color: white; 
+    color: black;
+}
+
+.dark {
+    border: 1px solid white;
+    background-color: #242424;
+    color: white;
+}
+
+.arrow-picker {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.picked-item {
+    width: 100px;
+    border: none;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+.selected {
+    background-color: #02a1e5d9;
+    color: #000000;
+}
+
+.selected:first-child {
+    border-radius: 50%, 0, 50%, 0;
+}
+
+.selected:last-child {
+    border-radius: 0, 50%, 0, 50%;
+}
+
+.weekday-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.weekday {
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    padding: 0.5px;
+}
+
+.day:hover {
+    background-color: #a4a4a4;
+}
