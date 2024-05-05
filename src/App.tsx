@@ -1,9 +1,11 @@
-import { Calendar } from './components/Calendar';
 import './App.css';
+import Calendar from './components/Calendar';
 
 function App() {
     return (
-        <Calendar theme="dark"/>
+        <>
+            <Calendar theme='dark' />
+        </>
     );
 }
 
